@@ -22,17 +22,17 @@ const Register = () => {
         <View style={Styles.container}>
             <StatusBar style="auto" />
 
-            <Image source={require('../assets/imgforLoginandRegi/Register.jpeg')} style={Styles.registerLogo} />
+            <Image source={require('../assets/imgforLoginandRegi/Register.jpeg')} style={Styles.register} />
 
 
-            <View style={Styles.form}>
-                <Text style={Styles.loginWord}>Register</Text>
+            <View style={Styles.box}>
+                <Text style={Styles.text}>Register</Text>
                 <TextInput
                     style={Styles.username}
                     mode="flat"
                     underlineColor="white"
                     label={'Username'}
-                    placeholder="Username" placeholderTextColor={'#B8B7C0'}
+                    placeholder="Please Enter your Username"
                     left={<TextInput.Icon icon={'account-outline'} color='#F6A035' style={Styles.userIcon} />}
                 />
 
@@ -40,9 +40,8 @@ const Register = () => {
                     style={Styles.email}
                     mode="flat"
                     underlineColor="white"
-                    secureTextEntry
                     label={'Email'}
-                    placeholder="Email" placeholderTextColor={'#B8B7C0'}
+                    placeholder="Please enter your Email"
                     left={<TextInput.Icon icon={'email-outline'} color='#76C88B' style={Styles.emailIcon} />}
                 />
 
@@ -50,8 +49,9 @@ const Register = () => {
                     style={Styles.password}
                     mode="flat"
                     underlineColor="white"
+                    secureTextEntry
                     label={'Password'}
-                    placeholder="Password" placeholderTextColor={'#B8B7C0'}
+                    placeholder="Password"
                     left={<TextInput.Icon icon={'lock-outline'} color='#A09EF3' style={Styles.passwordIcon} />}
                 />
 
@@ -65,7 +65,7 @@ const Register = () => {
                     <Ionicons name="logo-facebook" style={Styles.facebook} />
                 </TouchableOpacity>
                 <TouchableOpacity style={Styles.Touch}>
-                    <Icon name='google' size={25} color={'red'} />
+                    <Image source={require("../assets/imgforLoginandRegi/google.png")} style={Styles.google} />
                 </TouchableOpacity>
                 <TouchableOpacity style={Styles.Touch}>
                     <AntDesign name="apple1" style={Styles.apple} />
@@ -90,21 +90,18 @@ const Styles = StyleSheet.create({
         paddingTop: '10%',
         paddingBottom: '6%',
     },
-    registerLogo: {
+    register: {
         width: '100%',
-        height: 315,
+        height: 300,
     },
-
-
-    form: {
-
+    box: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         gap: 15,
     },
-    loginWord: {
-        fontSize: 25,
+    text: {
+        fontSize: 30,
         fontWeight: 'bold',
     },
     username: {
@@ -123,7 +120,7 @@ const Styles = StyleSheet.create({
     },
     userIcon: {
         backgroundColor: '#FDE8EA',
-        marginLeft: '30%',
+        marginLeft: '10%',
     },
     email: {
         width: '100%',
@@ -198,8 +195,8 @@ const Styles = StyleSheet.create({
         fontSize: 30,
     },
     google: {
-        width: '75%',
-        height: '75%',
+        width: 25,
+        height: 25,
     },
     apple: {
         color: '#15131E',
