@@ -28,6 +28,7 @@ const First_screen = () => {
                         borderBottomEndRadius: 50, borderBottomLeftRadius: 50,
                     }}
                         label="Email"
+                        underlineColor='white'
                         mode="flat"
                         placeholder='example@gmail.com'
                         left={<TextInput.Icon icon="email-outline" color={'#e355fd'} size={25} style={{
@@ -43,6 +44,7 @@ const First_screen = () => {
                         borderBottomEndRadius: 50, borderBottomLeftRadius: 50, marginTop: 10
                     }}
                         label="PassWord"
+                        underlineColor='white'
                         mode="flat"
                         secureTextEntry
                         placeholder='***********'
