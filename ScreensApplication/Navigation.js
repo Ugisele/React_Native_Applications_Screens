@@ -3,7 +3,7 @@ import React from "react";
 import Register from "../ScreensApplication/RegisterLoginScreens/Register";
 import Login from "./RegisterLoginScreens/Login";
 import Wallet from "./RegisterLoginScreens/Wallet";
-import Welcome from "./RegisterLoginScreens/Welcome";
+// import Welcome from "./RegisterLoginScreens/Welcome";
 
 // import ImageGallery from "../ScreensApplication/Screen/imageGallery";
 
@@ -12,7 +12,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Title } from "react-native-paper";
 import Welcome from "./RegisterLoginScreens/Welcome";
 
-const stack = createNativeStackNavigator();
+// const stack = createNativeStackNavigator();
 
 const Navigation = () => {
   return (
