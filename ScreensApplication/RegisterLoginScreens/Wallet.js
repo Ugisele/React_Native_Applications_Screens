@@ -7,16 +7,16 @@ import { Icon } from "react-native-elements";
 
 
 
-const Wallet = () => {
+const Wallet = ({natigation}) => {
     return (
 
         <ScrollView>
-            <View style={{ backgroundColor: "pink", paddingVertical: 20, paddingHorizontal: 10 }}>
-                <Text style={{}}> Home </Text>
-                <View style={{ flexDirection: "row", justifyContent: "space-between", width: "100%", paddingHorizontal: 10 }}>
+            <View style={{ backgroundColor: "#f2e7f1", paddingVertical: 1, paddingHorizontal: 5 }}>
+                <Text style={{fontSize: 30,fontWeight:'bold'}}> Home </Text>
+                <View style={{ flexDirection: "row", justifyContent: "space-between", width: "100%", paddingHorizontal: 10,  }}>
                     <TouchableOpacity style={{ rowGap: 10, alignItems: "center" }}>
                         <View style={{ borderRadius: 30, padding: 10, backgroundColor: "white" }}>
-                            <Entypo name="flash" size={30} color={"blue"} />
+                            <Entypo name="flash" size={30} color={"#bbbef6"} />
                         </View>
                         <Text style={{}}> Price-Alert </Text>
                     </TouchableOpacity>
@@ -38,19 +38,18 @@ const Wallet = () => {
                         <View style={{ borderRadius: 30, padding: 10, backgroundColor: "white" }}>
                             <Entypo name="star-outlined" size={30} color={"green"} />
                         </View>
-
-                        <Text > watchList </Text>
+                        <Text > WatchList </Text>
                     </TouchableOpacity>
                 </View>
-            </View>
+            
 
-            <View style={{ backgroundColor: 'green', borderRadius: 30 }}>
+            <View style={{ backgroundColor: '#f7f7fa', borderRadius: 30 }}>
 
                 <Text style={{ fontSize: 25, margin: 20, marginLeft: 10, fontWeight: "bold" }}> My Wallet</Text>
 
                 <View style={{ flex: 2, flexDirection: "row", paddingHorizontal: 10, }}>
                     <ScrollView horizontal>
-                        <View style={{ flexDirection: "row", backgroundColor: "pink", borderRadius: 10, padding: 10, width: '280px' }}>
+                        <View style={{ flexDirection: "row", backgroundColor: "white", borderRadius: 10, padding: 10, width: '120px' }}>
                             <View>
                                 <Text style={{ fontSize: 16 }}>Neo</Text>
                                 <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 15 }}>Neo 0,3456</Text>
@@ -70,10 +69,10 @@ const Wallet = () => {
                             </View>
 
                         </View>
-                        <View style={{ flexDirection: "row", backgroundColor: "pink", borderRadius: 10, padding: 10, width: '280px' }}>
+                        <View style={{ flexDirection: "row", backgroundColor: "white", borderRadius: 10, padding: 10, width: '280px' }}>
                             <View>
-                                <Text style={{ fontSize: 16 }}>Neo</Text>
-                                <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 15 }}>Neo 0,3456</Text>
+                                <Text style={{ fontSize: 16 }}>Usd</Text>
+                                <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 15 }}>Dollar 0,3456</Text>
                                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>$3,4556</Text>
                             </View>
                             <View style={{ flex: 1, flexDirection: "column", gap: 4, justifyContent: "space-between", alignItems: "center" }}>
@@ -88,10 +87,10 @@ const Wallet = () => {
                             </View>
 
                         </View>
-                        <View style={{ flexDirection: "row", backgroundColor: "pink", borderRadius: 10, padding: 10, width: '280px' }}>
+                        <View style={{ flexDirection: "row", backgroundColor: "white", borderRadius: 10, padding: 10, width: '280px' }}>
                             <View>
-                                <Text style={{ fontSize: 16 }}>Neo</Text>
-                                <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 15 }}>Neo 0,3456</Text>
+                                <Text style={{ fontSize: 16 }}>Euro</Text>
+                                <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 15 }}>Euro 0,3456</Text>
                                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>$3,4556</Text>
                             </View>
                             <View style={{ flex: 1, flexDirection: "column", gap: 4, justifyContent: "space-between", alignItems: "center" }}>
@@ -106,10 +105,10 @@ const Wallet = () => {
 
                         </View>
 
-                        <View style={{ flexDirection: "row", backgroundColor: "pink", borderRadius: 10, padding: 10, width: "280px" }}>
+                        <View style={{ flexDirection: "row", backgroundColor: "white", borderRadius: 10, padding: 10, width: "280px" }}>
                             <View>
-                                <Text style={{ fontSize: 16 }}>Neo</Text>
-                                <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>Neo 0,3456</Text>
+                                <Text style={{ fontSize: 16 }}>Usd</Text>
+                                <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>Vent 0,3456</Text>
                                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>$3,4556</Text>
                             </View>
                             <View style={{ flex: 1, flexDirection: "column", gap: 4, justifyContent: "space-between", alignItems: "center" }}>
@@ -169,6 +168,36 @@ const Wallet = () => {
 
                         </View>
                     </View>
+                </View>
+            </View>
+
+            <View style={{ flexDirection: "row", justifyContent: "space-between", width: "100%", paddingHorizontal: 10,  }}>
+                    <TouchableOpacity style={{ rowGap: 10, alignItems: "center" }}>
+                        <View style={{ borderRadius: 30, padding: 10, backgroundColor: "white" }}>
+                            <Entypo name="home" size={30} color={"#bbbef6"} />
+                        </View>
+                        
+                    </TouchableOpacity>
+                    <TouchableOpacity style={{ rowGap: 10, alignItems: "center" }}>
+                        <View style={{ borderRadius: 30, padding: 10, backgroundColor: "white" }}>
+                            <AntDesign name="swap" size={30} color={"orange"} />
+                        </View>
+
+                       
+                    </TouchableOpacity>
+                    <TouchableOpacity style={{ rowGap: 10, alignItems: "center" }}>
+                        <View style={{ borderRadius: 30, padding: 10, backgroundColor: "white" }}>
+                            <MaterialIcon name="copy-all" size={30} color={"blue"} />
+                        </View>
+
+        
+                    </TouchableOpacity>
+                    <TouchableOpacity style={{ rowGap: 10, alignItems: "center" }}>
+                        <View style={{ borderRadius: 30, padding: 10, backgroundColor: "white" }}>
+                            <Entypo name="user" size={30} color={"gray"} />
+                        </View>
+                     
+                    </TouchableOpacity>
                 </View>
             </View>
             <StatusBar style={"auto"} />

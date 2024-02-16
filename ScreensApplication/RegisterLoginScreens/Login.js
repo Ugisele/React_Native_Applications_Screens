@@ -6,7 +6,7 @@ import AntDesign from "react-native-vector-icons/AntDesign"
 import Ionicons from "react-native-vector-icons/Ionicons"
 
 
-const Login = () => {
+const Login = ({ navigation }) => {
     return (
         <View style={Styles.container}>
             <StatusBar style="auto" />
@@ -37,6 +37,14 @@ const Login = () => {
                     </TouchableOpacity>
                     <TouchableOpacity style={Styles.errorTouchable}>
                         <Text style={Styles.errortext}>Login</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style={{ flexDirection: 'row', gap: 50, marginTop: 15}}>
+                    <Text style={{ fontSize: 15, fontWeight: 'bold', marginLeft: 0 }}>New to the page??</Text>
+                    <TouchableOpacity  onPress={() =>
+                        navigation.navigate("register")}>
+                        <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#818FFC'}} >Register here</Text>
                     </TouchableOpacity>
                 </View>
 

@@ -17,7 +17,7 @@ import Ionicons from "react-native-vector-icons/Ionicons"
 import React from "react";
 
 
-const Register = () => {
+const Register = ({ navigation }) => {
     return (
         <View style={Styles.container}>
             <StatusBar style="auto" />
@@ -55,7 +55,8 @@ const Register = () => {
                     left={<TextInput.Icon icon={'lock-outline'} color='#A09EF3' style={Styles.passwordIcon} />}
                 />
 
-                <TouchableOpacity style={Styles.submitTouch}>
+                <TouchableOpacity style={Styles.submitTouch} 
+                onPress={ () => navigation.navigate('welcome')}>
                     <Text style={Styles.submitLogin}>Register</Text>
                 </TouchableOpacity>
             </View>
