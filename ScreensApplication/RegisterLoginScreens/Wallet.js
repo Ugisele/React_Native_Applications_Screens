@@ -270,7 +270,6 @@ const Styles = StyleSheet.create({
         backgroundColor: '#FFE2ED',
         marginLeft: '-0.2%',
     },
-
 })
 
 
