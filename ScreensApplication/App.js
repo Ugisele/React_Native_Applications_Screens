@@ -1,17 +1,14 @@
-
 import React from "react";
-// import Navigation from "./Navigation";
-import Wallet from "./RegisterLoginScreens/Wallet";
-
-
+import { View } from "react-native";
+import Fashion from "./FashionScreen/Fashion";
+import Data from './FashionScreen/data'
 
 export default function App() {
   return (
-
-    // <Navigation />
-
-    <Wallet/>
-
+    <View>
+      <Fashion />
+      <Data />
+    </View>
   );
 }
 

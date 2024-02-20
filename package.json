@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-optional-catch-binding": "^7.23.4"
+  }
+}
