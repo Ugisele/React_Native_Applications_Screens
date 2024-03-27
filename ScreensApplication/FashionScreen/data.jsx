@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View,Image } from "react-native";
 import { StatusBar } from 'expo-status-bar';
 import Card from "./card";
 

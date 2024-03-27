@@ -56,7 +56,7 @@ const Register = ({ navigation }) => {
                 />
 
                 <TouchableOpacity style={Styles.submitTouch} 
-                onPress={ () => navigation.navigate('welcome')}>
+                onPress={ () => navigation.navigate('wallet')}>
                     <Text style={Styles.submitLogin}>Register</Text>
                 </TouchableOpacity>
             </View>
