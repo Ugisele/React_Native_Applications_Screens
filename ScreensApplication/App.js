@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View>
       <Fashion />
-      <Data />
+      {/* <Data /> */}
     </View>
   );
 }
